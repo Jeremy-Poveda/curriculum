@@ -134,6 +134,10 @@ form {
   margin: 0 auto;
 }
 
+iframe{
+    height: 200px;
+}
+
 label {
   display: block;
   margin-bottom: 5px;
