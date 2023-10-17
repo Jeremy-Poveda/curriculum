@@ -21,100 +21,89 @@
     <link rel="stylesheet" href="stylesheets/style.css" />
     <body>
       <header>
-        <figure><img src="img/profile-placeholder.png" width="100px" height="100px"></figure>
-        <h1>Jeremy Poveda</h1>
-        <h2>Ing. Ciencias de la computación</h2>
+        <figure><img src="img/perfil.jpeg"></figure>
+        <div>
+          <h1>JEREMY POVEDA GOROTIZA</h1>
+          <h2>Ing. Ciencias de la computación</h2>
+        </div>
       </header>
-      <section class="left-section">
-        <h2 class="subtitle">Resumen</h2>
-        <nav>
-          <ol>
-            <li><a href="#informacion-personal">Información personal</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-            <li><a href="#estudios">Estudios</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#experiencia-laboral">Experiencia laboral</a></li>
-          </ol>
-        </nav>
-        <section id="informacion-personal">
-          <h2 class="subtitle">Información personal</h2>
-          <p>Edad: <span>20 años</span></p>
-          <p>Acerda de mi: <span> Jóven ecuatoriano amante de la programación, del diseño web, back-end y desarrollo de videojuegos.</span></p>
+      <main>
+        <section class="left-section">
+          <nav>
+            <h2 class="subtitle">Resumen</h2>
+            <ol>
+              <li><a href="#informacion-personal">Información personal</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+              <li><a href="#estudios">Estudios</a></li>
+              <li><a href="#habilidades">Habilidades</a></li>
+              <li><a href="#experiencia-laboral">Experiencia laboral</a></li>
+            </ol>
+          </nav>
+          <section id="informacion-personal">
+            <h2 class="subtitle">Información personal</h2>
+            <p>Edad: <span>20 años</span></p>
+            <p>Acerda de mi: <span> Jóven ecuatoriano amante de la programación,<br> del diseño web, back-end y desarrollo de videojuegos.</span></p>
+          </section>
+          <section id="contacto">
+            <h2 class="subtitle">Contacto</h2>
+            <p>Teléfono:<span>+593 96 164 2035</span></p>
+            <p>Correo electrónico:<span>jerypovedag@gmail.com</span></p>
+            <p>Linkedin:<span>https://www.linkedin.com/in/jeremy-poveda/</span></p>
+            <h2 class="subtitle">Formulario de contacto</h2>
+            <form action="/my-handling-form-page" method="post">
+              <label for="name">Nombre:</label>
+              <input type="text" id="name" name="user_name" /><br>
+              <label for="mail">Correo electrónico:</label> 
+              <input
+                type="email"
+                id="user-email"
+                placeholder="tucorreo@tudominio"
+                required
+              /> <br>
+              <label for="msg">Mensaje:</label>
+              <textarea id="msg" name="user_message"></textarea> <br>
+    
+              <input type="summit" value="Enviar" /> <br>
+            </form>
+          </section>
         </section>
-      </section>
-      <section class="right-section">
-        <section id="contacto">
-          <h2 class="subtitle">Contacto</h2>
-          <p>Teléfono:<span>+593 96 164 2035</span></p>
-          <p>Correo electrónico:<span>jerypovedag@gmail.com</span></p>
-          <p>
-            Linkedin:
-            <span>https://www.linkedin.com/in/jeremy-poveda/</span>
-          </p>
-          <h2 class="subtitle">Formulario de contacto</h2>
-          <form
-            action="/my-handling-form-page"
-            method="post"
-          >
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="user_name" /> <br>
-  
-            <label for="mail">Correo electrónico:</label> 
-            <input
-              type="email"
-              id="user-email"
-              placeholder="tucorreo@tudominio"
-              required
-            /> <br>
-            <label for="msg">Mensaje:</label>
-            <textarea id="msg" name="user_message"></textarea> <br>
-  
-            <input type="summit" value="Enviar" /> <br>
-          </form>
-        </section>
-      </section>
-      
-      
-      <section id="estudios">
-        <h2 class="subtitle">Educación</h2>
-        <p>
-          Grado:
-          <span>Ingeniero en ciencias de la computación</span>
-        </p>
-        <p>
-          Institución:
-          <span>Escuela Superior Politécnica del Litoral (ESPOL)</span>
-        </p>
-        <p>Fechas: <span>2021 - 2025</span></p>
-      </section>
-      <section id="habilidades">
-        <h2 class="subtitle">Habilidades</h2>
-        <ul>
-          <li>Lenguajes de programación: Python, Java, HTML</li>
-          <li>Bases de datos: MySQL</li>
-          <li>Herramientas de desarrollo: Git</li>
-          <li>Idiomas: Español, Inglés, Chino (Aprendiendo)</li>
-        </ul>
-      </section>
-      <section id="experiencia-laboral">
-        <h2 class="subtitle">Experiencia laboral</h2>
-        <table border="1">
-          <thead>
-            <tr>
-              <th>Empresa</th>
-              <th>Puesto</th>
-              <th>Años de experiencia</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Proximamente...</td>
-              <td>Proximamente...</td>
-              <td>Proximamente...</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+        <section class="right-section">
+          <section id="estudios">
+            <h2 class="subtitle">Educación</h2>
+            <p>Grado:<span>Ingeniero en ciencias de la computación</span></p>
+            <p>Institución:<span>Escuela Superior Politécnica del Litoral (ESPOL)</span></p>
+            <p>Fechas: <span>2021 - 2025</span></p>
+          </section>
+          <section id="habilidades">
+            <h2 class="subtitle">Habilidades</h2>
+            <ul>
+              <li>Lenguajes de programación: Python, Java, HTML</li>
+              <li>Bases de datos: MySQL</li>
+              <li>Herramientas de desarrollo: Git</li>
+              <li>Idiomas: Español, Inglés, Chino (Aprendiendo)</li>
+            </ul>
+          </section>
+          <section id="experiencia-laboral">
+            <h2 class="subtitle">Experiencia laboral</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Empresa</th>
+                  <th>Puesto</th>
+                  <th>Años de experiencia</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Proximamente...</td>
+                  <td>Proximamente...</td>
+                  <td>Proximamente...</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </section>  
+      </main>
       <footer>
         <p>Copyright © 2023 Jeremy Poveda</p>
       </footer>

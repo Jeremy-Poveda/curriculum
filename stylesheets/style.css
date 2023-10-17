@@ -1,4 +1,9 @@
-
+:root {
+    --color-primary: #c7dbff; /* Color primario */
+    --color-secondary: rgb(223, 226, 243); /* Color secundario */
+    --color-soft: white;
+    --color-accent: #0e1d3c; /* Color de acento */
+}
 
 * {
     font-family: Arial, sans-serif;
@@ -10,27 +15,128 @@ h1{
 
 .subtitle{
     font-family: 'Telex', serif;
+    color: var(--color-accent);
 }
 
 .subtitle p{
     font-family: 'Roboto', serif;
 }
 
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+main{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-items: center;
+}
 
 header{
     display: flex;
-    justify-content: space-between;
-    background-color: #6C786B;
-    color: #F2DCC2;
+    justify-content: space-evenly;
     align-items: center;
-    height: 150px;
+    background-color: var(--color-primary);
+    color: var(--color-accent);
 }
 
-section{
-    padding: 2% 2%;
-    color: black;
-    border-radius: 40px;
+.left-section{
+    flex-grow: 0.2;
+    background-color: var(--color-secondary);
 }
-nav ol{
-    color: #F2622E;
+.right-section{
+    flex-grow: 1;
+    background-color: var(--color-soft);
 }
+
+:root {
+    --color-primary: #c7dbff; /* Color primario */
+    --color-secondary: rgb(223, 226, 243); /* Color secundario */
+    --color-soft: white;
+    --color-accent: #0e1d3c; /* Color de acento */
+}
+
+* {
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    font-family: 'Mulish', sans-serif;
+}
+
+.subtitle{
+    font-family: 'Telex', serif;
+    color: var(--color-accent);
+}
+
+.subtitle p{
+    font-family: 'Roboto', serif;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+main{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-items: center;
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--color-primary);
+    color: var(--color-accent);
+}
+
+.left-section{
+    flex-grow: 0.2;
+    background-color: var(--color-secondary);
+}
+.right-section{
+    flex-grow: 1;
+    background-color: var(--color-soft);
+}
+
+figure {
+  border: 10px solid var(--color-primary); /* Borde blanco */
+  border-radius: 50%; /* Borde redondeado */
+  overflow: hidden; /* La parte que sobresale será visible */
+  position: relative;
+  bottom: -3em;
+
+}
+
+figure img {
+  width: 12em; 
+  height: 12em; 
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ajusta la altura al 100% para centrar el contenido */
+    padding: 20px; /* Añade un relleno para separar el texto del borde */
+    box-sizing: border-box; /* Incluye el relleno en la altura y el ancho total */
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+  
