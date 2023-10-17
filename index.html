@@ -13,63 +13,70 @@
       name="description"
       content="Curriculum Vitae de Jeremy Rodrigo Poveda Gorotiza"
     />
-    <link rel="stylesheet" href="style.css" />
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;700&family=Roboto&family=Telex&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="stylesheets/style.css" />
     <body>
       <header>
-        <h1>Currículum Vitae</h1>
+        <figure><img src="img/profile-placeholder.png" width="100px" height="100px"></figure>
+        <h1>Jeremy Poveda</h1>
+        <h2>Ing. Ciencias de la computación</h2>
       </header>
-      <nav>
-        <ol>
-          <li><a href="#informacion-personal">Información personal</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-          <li><a href="#estudios">Estudios</a></li>
-          <li><a href="#habilidades">Habilidades</a></li>
-          <li><a href="#experiencia-laboral">Experiencia laboral</a></li>
-        </ol>
-      </nav>
-      <section id="informacion-personal">
-        <h2>Información personal</h2>
-        <p>Nombre Completo: <span>Jeremy Rodrigo Poveda Gorotiza</span></p>
-        <p>Edad: <span>20 años</span></p>
+      <section class="left-section">
+        <h2 class="subtitle">Resumen</h2>
+        <nav>
+          <ol>
+            <li><a href="#informacion-personal">Información personal</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#estudios">Estudios</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#experiencia-laboral">Experiencia laboral</a></li>
+          </ol>
+        </nav>
+        <section id="informacion-personal">
+          <h2 class="subtitle">Información personal</h2>
+          <p>Edad: <span>20 años</span></p>
+          <p>Acerda de mi: <span> Jóven ecuatoriano amante de la programación, del diseño web, back-end y desarrollo de videojuegos.</span></p>
+        </section>
       </section>
-      <section id="contacto">
-        <h2>Contacto</h2>
-        <p>
-          Teléfono:
-          <span>+593 96 164 2035</span>
-        </p>
-        <p>
-          Correo electrónico:
-          <span>jerypovedag@gmail.com</span>
-        </p>
-        <p>
-          Linkedin:
-          <span>https://www.linkedin.com/in/jeremy-poveda/</span>
-        </p>
-        <h2>Formulario de contacto</h2>
-        <form
-          action="/my-handling-form-page"
-          method="post"
-        >
-          <label for="name">Nombre:</label>
-          <input type="text" id="name" name="user_name" /> <br>
-
-          <label for="mail">Correo electrónico:</label> 
-          <input
-            type="email"
-            id="user-email"
-            placeholder="tucorreo@tudominio"
-            required
-          /> <br>
-
-          <label for="msg">Mensaje:</label>
-          <textarea id="msg" name="user_message"></textarea> <br>
-
-          <input type="summit" value="Enviar" /> <br>
-        </form>
+      <section class="right-section">
+        <section id="contacto">
+          <h2 class="subtitle">Contacto</h2>
+          <p>Teléfono:<span>+593 96 164 2035</span></p>
+          <p>Correo electrónico:<span>jerypovedag@gmail.com</span></p>
+          <p>
+            Linkedin:
+            <span>https://www.linkedin.com/in/jeremy-poveda/</span>
+          </p>
+          <h2 class="subtitle">Formulario de contacto</h2>
+          <form
+            action="/my-handling-form-page"
+            method="post"
+          >
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="user_name" /> <br>
+  
+            <label for="mail">Correo electrónico:</label> 
+            <input
+              type="email"
+              id="user-email"
+              placeholder="tucorreo@tudominio"
+              required
+            /> <br>
+            <label for="msg">Mensaje:</label>
+            <textarea id="msg" name="user_message"></textarea> <br>
+  
+            <input type="summit" value="Enviar" /> <br>
+          </form>
+        </section>
       </section>
+      
+      
       <section id="estudios">
-        <h2>Educación</h2>
+        <h2 class="subtitle">Educación</h2>
         <p>
           Grado:
           <span>Ingeniero en ciencias de la computación</span>
@@ -81,7 +88,7 @@
         <p>Fechas: <span>2021 - 2025</span></p>
       </section>
       <section id="habilidades">
-        <h2>Habilidades</h2>
+        <h2 class="subtitle">Habilidades</h2>
         <ul>
           <li>Lenguajes de programación: Python, Java, HTML</li>
           <li>Bases de datos: MySQL</li>
@@ -90,7 +97,7 @@
         </ul>
       </section>
       <section id="experiencia-laboral">
-        <h2>Experiencia laboral</h2>
+        <h2 class="subtitle">Experiencia laboral</h2>
         <table border="1">
           <thead>
             <tr>

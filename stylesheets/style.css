@@ -1,0 +1,36 @@
+
+
+* {
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    font-family: 'Mulish', sans-serif;
+}
+
+.subtitle{
+    font-family: 'Telex', serif;
+}
+
+.subtitle p{
+    font-family: 'Roboto', serif;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #6C786B;
+    color: #F2DCC2;
+    align-items: center;
+    height: 150px;
+}
+
+section{
+    padding: 2% 2%;
+    color: black;
+    border-radius: 40px;
+}
+nav ol{
+    color: #F2622E;
+}
