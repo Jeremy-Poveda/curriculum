@@ -19,6 +19,8 @@ h1{
 .subtitle{
     font-family: 'Telex', serif;
     color: var(--color-accent);
+    border-bottom: 3pt dotted var(--color-accent); 
+    margin-bottom: 1em;
 }
 
 .subtitle p{
